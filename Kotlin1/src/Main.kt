@@ -1,5 +1,5 @@
 const val MENU = """Bienvenido a la guia de recetas ¿Que quieres hacer?
-    |1. Agregar una recetas 
+    |1. Agregar una receta
     |2. Consultar  mis recetas 
     |3. Salir del programa
 """
@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
     var receta:String = ""
     var listaRecetas = mutableListOf<String>()
     var numeroReceta = 0
-    
+
     do {
         println(MENU)
         opcion = readLine()?.toInt()?:0
