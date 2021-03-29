@@ -30,12 +30,12 @@ fun main(args: Array<String>) {
                 listaRecetas.add(receta)
             }
             2 -> {
-                for (i in listaRecetas){
-                    numeroReceta = numeroReceta.inc()
-                    println("La receta #${numeroReceta} es $i")
+                for ((index, i) in listaRecetas.withIndex()){
+                    //numeroReceta = numeroReceta.inc()
+                    println("La receta #${index+1} es $i")
                     println("\n")
                 }
-                numeroReceta = 0
+                //numeroReceta = 0
             }
             3 -> {}
             else -> println("Por favor ingresa un numero valido")
