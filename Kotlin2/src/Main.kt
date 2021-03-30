@@ -17,12 +17,11 @@ const val MENUINGREDIENTES = """¿Que ingrediente quieres agregar?
 
 fun main(args: Array<String>) {
     var opcion: Int
-    var receta:String = ""
-    var listaRecetas = mutableListOf<String>()
-    var numeroReceta = 0
+    var receta: String
+    val listaRecetas = mutableListOf<String>()
 
-    var ingresoReceta = {
-        var ingredienteAgregado: String = ""
+    val ingresoReceta = {
+        var ingredienteAgregado = ""
         var opcionIngrediente: Int
 
         do{
