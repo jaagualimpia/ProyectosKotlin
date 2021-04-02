@@ -1,13 +1,9 @@
-import com.sun.xml.internal.fastinfoset.util.StringArray
-import model.Aceites
 import model.CreadorRecetas
-
 
 fun main(args: Array<String>) {
     var opcion: Int = 0
     val librorecetas = mutableListOf<String>()
     val receta = CreadorRecetas()
-    var recetaNueva:String
 
     val menuIngredientes = """Bienvenido a tu libro de recetas
 Ingresa que accion deseas realizar
